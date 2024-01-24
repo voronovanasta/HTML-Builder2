@@ -13,7 +13,7 @@ fs.readdir(path.resolve(__dirname, "secret-folder"),{
             let filePath = path.join(__dirname, 'secret-folder', file.name);
         fs.stat(filePath, (err, stats) => {
             if (err) {
-              console.error(err);
+              console.error(err)
             }
            result += stats.size;
            console.log(result);
